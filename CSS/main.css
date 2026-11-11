@@ -68,3 +68,26 @@ h1{
 	margin-bottom: 1rem;
 	/* an rem is always relative to thhe root font size or the font size set on your html element (defuaklt is 16px) - so 1 rem - 16px */
 }
+
+h3{
+	font-size: 1.6rem;
+	padding: 0.5;
+}
+
+article div{
+	font-size: 2.2em;
+	padding: 10px;
+	border: 2px solid lightslategray;
+	background-color: lightsteelblue;
+}
+
+/* ***********************************
+			Felx Box Styles			
+************************************* */
+
+section:nth-of-type(1) article{
+	/* nth of type selects the first element that matches the type (in this case, section */
+
+	/* display:flex, by default, makes things sit next to each other */
+	display:flex;
+}

@@ -91,3 +91,80 @@ section:nth-of-type(1) article{
 	/* display:flex, by default, makes things sit next to each other */
 	display:flex;
 }
+
+section:nth-of-type(2) article{
+	display: flex;
+
+	/* flex-direction lets you control which way the elements stack 0 whethre horizontally )row) or verticcally (column) - or in reverse */
+
+	flex-direction: row-reverse;
+}
+
+section:nth-child(3) article{
+	display: flex;
+
+	/* justify content allows you to controol how elemenets are distributed in their parent
+
+	flex start and flex ennd are defined based on reading direction of the users language */
+	justfiy-content:flex-end;
+	
+	/* space-between puts an equal amount of space between the elements */
+	justify-content: space-between;
+
+	/* similar but puts equal amount of space around of each element */
+	justify-content: space-around;
+
+	/* equally distributes the elements in the available space */
+	justify-content: space-evenly;
+}
+
+section:nth-of-type(4) article{
+	display: flex;
+
+}
+
+/* you can tell the flexed ekements to grow to taje the available space */
+
+section:nth-of-type(4) article div{
+	flex-grow: 1;
+}
+
+section:nth-of-type(4) article div:nth-of-type(2){
+	/* tell the second div to take up twice s much space as the others */
+	flex-grow: 2;
+}
+
+/* ***********************************
+	Felxbox  Nav Style Example		
+************************************* */
+
+nav ul{
+	display:flex;
+
+	/* you can tell the content to wrap if it doesnt fit */
+	flex-wrap: wrap;
+
+	/* for text based nav, distribute the content evenly... */
+	justify-content: space-evenly;
+}
+
+nav li{
+/* tell the list items to grow to fill the available space */
+	flex-grow: 1;
+
+	/* make the list items display flec so we can tell the tags inside to fill up the space */
+	display: flex;
+
+}
+
+nav ul a{
+	flex-grow: 1;
+	padding: 10;
+	background-color: violet;
+	text-align: center;
+}
+
+nav ul a:hover{
+	background-color: blueviolet;
+
+}

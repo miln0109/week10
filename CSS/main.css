@@ -46,3 +46,25 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* **************************
+		MAIN STYLES
+		************************/
+
+		.container{
+			max-width: 900px;
+			margin: 0 auto;
+			background-color: cadetblue;
+			}
+
+h1{
+	font-size: 2.2em;
+	/* ems are relative to the current font size - defualt font size is 16px...
+	2,2em =16 *2.2 =35.2px; */
+
+	padding: 1.5em;
+	/* becasue the font size of this eleement is set to 2.2em (or 35.2px), setting paddinig with em is reelative to that font size or 0.5 * 35.2 = 17.6px */
+
+	margin-bottom: 1rem;
+	/* an rem is always relative to thhe root font size or the font size set on your html element (defuaklt is 16px) - so 1 rem - 16px */
+}
